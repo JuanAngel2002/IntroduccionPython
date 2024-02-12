@@ -6,10 +6,12 @@ def ingresarLista():
         lista.append(int(input("ingrese un número: ")))  
     return lista
 
+# def mostrarLista(lista):
+#     for x in lista:
+#         print(x)
 def mostrarLista(lista):
-    for x in lista:
-        print(x)
-
+    print("\n", lista)
+    
 def buscarLista(lista1):
     numero = int(input("ingrese el número a buscar: "))
     for i in lista1:
@@ -22,7 +24,7 @@ def ingresarRandom():
     lista=[]
     for i in range(20):
         lista.append(random.randint(1,100))
-        return lista
+    return lista
     
 lista1 = []
 opcion=1
