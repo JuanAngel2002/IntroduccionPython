@@ -40,8 +40,10 @@ while opcion!=0:
         0. Salir
         """)
     opcion=int(input("Digite la opcion que desea: "))   
-    
-    if opcion==1:
+    if opcion==0:
+        print("Saliendo...")
+        break
+    elif opcion==1:
         lista1 = ingresarLista()
     elif opcion==2:
         lista1.sort()
@@ -53,5 +55,6 @@ while opcion!=0:
         lista1 = ingresarRandom()
     else:
         print("opcion no valida")
+        
 
 
