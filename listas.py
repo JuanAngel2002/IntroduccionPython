@@ -19,7 +19,7 @@ print(len(listas))
 #print(valorquequiero in nombre de la lista)
 
 #para buscar el indice de algun elemento
-#print(lista.index(valor que deseas buscar))
+#print(listas.index(valor que deseas buscar))
 
 #para mostrar cuantos valores repetidos hay
 #print(lista.count(valor que deseas))

@@ -25,6 +25,27 @@ def ingresarRandom():
     for i in range(20):
         lista.append(random.randint(1,100))
     return lista
+
+def removerDato(lista1):
+    dato = int(input("Ingrese el número a remover: "))
+    if dato in lista1:
+        lista1.remove(dato)
+        print("El dato", dato, "se removió correctamente")
+    else:
+        print("El dato no se encuentra en la lista")
+    return lista1
+
+def updateDato():
+    dato=int(input("ingrese el número a actualizar:"))
+    if dato in lista1:
+        dato1=int(input("ingrese el nuevo dato: "))
+        indice = lista1.index(dato)
+        lista1[indice]=dato1
+        print("el dato se actualizó correctamente")
+    else:
+        print("el dato no se encuentra en la lista")
+    
+    
     
 lista1 = []
 opcion=1
@@ -49,8 +70,12 @@ while opcion!=0:
         lista1.sort()
     elif opcion==3:
         lista1 = buscarLista(lista1)
+    elif opcion==4:
+        lista1 = removerDato(lista1)
     elif opcion==5:
         mostrarLista(lista1)
+    elif opcion==6:
+        updateDato()
     elif opcion==7:
         lista1 = ingresarRandom()
     else:
